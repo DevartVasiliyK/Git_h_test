@@ -1,0 +1,6 @@
+﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[procedure1] (@a2 INT) WITH ENCRYPTION
+AS 
+SELECT * FROM Person.Address a WHERE  a.AddressID = @a2
+GO
